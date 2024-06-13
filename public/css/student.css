@@ -1,0 +1,94 @@
+:root{
+    --p-col: white;
+    --s-col:rgb(34,79,116);
+    --t-col:rgb(242,89,28);
+}
+ body {
+    font-family: serif ;
+    padding: 0px;
+    margin: 0px;
+} 
+.login, .studentReg, .treg{
+    font-family: serif ;
+    text-align: center;
+    padding: 2rem;
+    margin: 0rem;
+}
+
+h1 {
+    color: var(--t-col);
+    padding:50px;
+    margin: 1rem;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--s-col);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label{
+    text-align: start;
+    color: white;
+    display: block;
+    margin: 5px 0;
+
+}
+input,
+select {
+    display: block;
+    margin: 5px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    padding: 0;
+    font-size: inherit;
+}
+
+button {
+    background: var(--p-col);
+    color: var(--t-col);
+    border: solid 1px var(--t-col);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: serif;
+}
+
+button:hover {
+    background: rgb(247, 121, 71);;
+    color: var(--p-col);
+}
+#reg{
+    padding: 1.5rem;
+}
+.logbtn{
+    background: var(--t-col);
+    color: var(--p-col);
+    border: solid 1px var(--t-col);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+}

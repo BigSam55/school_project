@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_content">
+            
+            <div class="result">
+                <div class="result-content">
+                  <div class="cancel">
+                    <a href="/teacherdashboard"> <img id="cancelBtnResult" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3wUk9ccNfcYNSHP_FA_9-_zfYDaqqVgf5g&usqp=CAU" alt="cancel"></a>
+                     
+                  </div> 
+                  <center> <figure>
+                       <img id="studentImg" src="data:<%= userInfo.Image.contentType %>;base64,<%= userInfo.Image.data.toString('base64') %>" alt="student passport">
+                   </figure>
+                   <h4>Student's Detail</h4></center>
+                   <span class="studentData">
+                        <p id="ccff"> <b>Name:</b> </p><p class="fullName"><%= userInfo.Fullname %></p>
+                        <p id="ccff"><b> Age: </b></p> <p class="Age"><%= userInfo.DOB %></p>
+                        <p id="ccff"><b>Email:</b>  </p><p class="email"><%= userInfo.Email%></p>
+                        <p id="ccff"><b>Phone:</b>  </p><p class="email"><%= userInfo.Phone%></p>
+                        <p id="ccff"><b>Instructor:</b>  </p><p class="email"><%= userInfo.Instructor%></p>
+                   </span>
+                   <span class="scoreshit">
+                       <p style="color:rgb(242,89,28)"><b>Courses</b></p> <p style="color:rgb(242,89,28);" id="result"><b>Score</b></p>
+                       <% for( let index = 1; index < userInfo.myresult.length; index++ ) { %>
+                        <p id="ccfg">Mathematics</p><p class="math"><%= userInfo.myresult[index].maths %></p>
+                        <p id="ccfg">English </p><p class="eng"><%= userInfo.myresult[index].eng %></p>
+                        <p id="ccfg">Chemistry </p> <p class="chem"><%= userInfo.myresult[index].chem %></p>
+                        <p id="ccfg">Physic </p><p class="phy"><%= userInfo.myresult[index].phy %></p>
+                        <p id="ccfg">Biology </p><p class="bio"><%= userInfo.myresult[index].bio %></p>
+                        <p id="ccfg">Total Score </p><p class="totalScore"></p>
+                        <p >Average Score </p><p class="averageScore"></p>
+                        <p id="ccfg">Attendance </p><p class=""><%= userInfo.myresult[index].attendance %></p>
+                        <p style="color: rgb(242,89,28); font-weight: bold;">Grade </p><p style="color: rgb(242,89,28); font-weight: bold; font-size: 30px;" class="grade"></p>
+                        
+                       <% } %>
+
+
+
+                     
+                   </span>
+          
+                  </div>
+        </div>
+       
+
+    </div>
+    <script src="/js/profile.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/css/student.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+    <%- include('partials/nav') %>
+<div class="login">
+    <h1 id="reg">Login</h1>
+<h4 style="color: red;"><%=messages%></h4>
+    <form method="POST" action="/login">
+        <label for="username" style="text-align: start; color: white;" >Username</label>
+        <input type="text" id="username" name="username" placeholder="username"><br>
+
+        <label for="password" style="text-align: start; color: white;">Password</label>
+        <input type="password" id="password" name="password" placeholder="password" required><br>
+
+        <button class="logbtn">Login</button>
+            <p style="font-size: 13px; margin-bottom: -5px; margin-left: 70%; color: white;"> Forgot password?<a style="text-decoration: none;color:rgb(242,89,28);" href="/forgetpassword"> Reset..</a></p> 
+        
+            <p style="font-size: 13px; margin-top: -20px; margin-left: -63%; color: white; ">Don't have an account?<a style="text-decoration: none;color:rgb(242,89,28);" href="/registration"> Sign Up..</a></p> 
+        
+    </form>
+</div>
+    
+<div class="footer">
+    <%- include('partials/footer') %>
+</div>
+   
+</body>
+
+<script src="/js/profile.js"></script>
+</html>

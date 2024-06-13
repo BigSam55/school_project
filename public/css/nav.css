@@ -1,0 +1,116 @@
+:root{
+    --p-col: white;
+    --s-col:rgb(34,79,116);
+    --t-col:rgb(242,89,28);
+}
+
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+header {
+    background-color: var(--p-col);
+    color: var(--t-col);
+    padding: 10px 0;
+    border-bottom: solid 3px rgb(250, 248, 248);
+    position: sticky;
+    
+}
+#logo img{
+    width: 100%;
+    margin-top: -10px;
+
+}
+#logo{
+    width: 100px;
+    display: flex;
+    margin-left:-20px;
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--s-col);
+    width: 90%;
+    margin-left: 5%;
+}
+
+#logo a {
+    color: var(--s-col);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--s-col);
+    margin-left: -10px;
+    margin-top: 14px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color:var(--s-col) ;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family:serif;
+
+}
+#btn{ 
+    background-color: inherit;
+    border: solid 1px var(--t-col);
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+    font-family: serif;
+    color: var(--t-col);
+    /* border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; */
+
+}
+
+#btn:hover{
+    color: var(--p-col);
+    background-color: var(--t-col);
+}
+.btn button{
+    margin-left: 8px;
+    margin-top: -10px;
+}
+
+.nav-links a:hover {
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--s-col);
+}
+.nav-top{
+    background-color: var(--s-col);
+    color: var(--p-col) ;
+    padding: 0.4rem;
+    position: sticky;
+   
+}
+.text {
+    margin-left: 69%;
+    display:flex;
+
+
+}
+.text a{
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: var(--p-col);
+    padding: 5px;
+
+
+}

@@ -1,0 +1,152 @@
+:root{
+    --p-col: white;
+    --s-col:rgb(34,79,116);
+    --t-col:rgb(242,89,28);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+   
+}
+.dashboard{
+    font-family: serif;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar {
+    height: 97vh;
+    width: 200px;
+    background-color: var(--s-col);
+    padding-top: 20px;
+    border-right: solid 5px rgb(250, 248, 248);
+    border-bottom-right-radius: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--p-col);
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: background 0.3s;
+    font-size:  1.2rem;
+}
+
+.sidebar a:hover {
+    
+    border-left:solid 4px var(--t-col) ;
+    color: var(--t-col);
+    
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+
+#logoutbtn{
+    width: 120px;
+    height: 40px;
+    margin-top: 200px;
+    margin-left: 35px;
+    background-color: var(--t-col);
+    color: var(--p-col);
+    border: solid 1px var(--t-col);
+    font-size: 1rem;
+    font-family: serif;
+}
+#logoutbtn:hover{
+    background: rgb(247, 121, 71);;
+    color: var(--p-col);
+}
+.student{
+    background-color: var(--s-col);
+    color: var(--p-col);
+    width: 50%;
+    position: static;
+    padding: 2rem;
+    margin-left: 20%;
+    margin-top: -500px;
+
+}
+
+
+button{ 
+    background-color: var(--t-col);
+    color: var(--p-col);
+    border: solid 1px var(--t-col);
+    width: 80px;
+    height: 30px;
+    font-size: 0.7rem;
+    font-family: serif;
+
+
+}
+button:hover{
+    background: rgb(247, 121, 71);;
+    color: var(--p-col);
+}
+.studentbtn{
+    display: inline-block;
+    margin-left: 5rem;
+}
+table {
+    font-family:serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid rgb(250, 248, 248);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--s-col);
+    color: var(--p-col);
+  }
+  thead{
+      background-color: var(--s-col);
+      color: white;
+  }
+/* <\student dashboard css */
+  #scoreshit{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    width: 95%;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -30px;
+
+}
+
+#student{
+    background-color: var(--s-col);
+    color: var(--p-col);
+    width: 40%;
+    height: 62vh;
+    position: static;
+    padding: 1rem;
+    margin-left: 27%;
+    margin-top: -550px;
+    border-radius: 10px;
+
+}
+#ccfg{
+    margin-top: 10px;
+}
+
+.aggregate{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4px;
+}
